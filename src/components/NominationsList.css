@@ -1,0 +1,31 @@
+.nominationsList {
+  width: 100%;
+  min-width: 500px;
+  margin-left: 20px;
+}
+.nominationItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.deleteButton {
+  padding: 0;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+
+  right: 12px;
+}
+.listInfo {
+  text-align: left;
+  margin-bottom: 0;
+  right: 50px;
+}
+.nominationBadge {
+  margin-left: 20px;
+  margin-right: 40px;
+  text-align: left;
+}
+.nominationListItem {
+  cursor: pointer;
+}
