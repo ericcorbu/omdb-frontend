@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/omdb-frontend/static/css/main.0bd2ff06.chunk.css",
-    "main.js": "/omdb-frontend/static/js/main.3612ea6c.chunk.js",
-    "main.js.map": "/omdb-frontend/static/js/main.3612ea6c.chunk.js.map",
+    "main.css": "/omdb-frontend/static/css/main.4d4ec4ef.chunk.css",
+    "main.js": "/omdb-frontend/static/js/main.0300254c.chunk.js",
+    "main.js.map": "/omdb-frontend/static/js/main.0300254c.chunk.js.map",
     "runtime-main.js": "/omdb-frontend/static/js/runtime-main.1d7ff260.js",
     "runtime-main.js.map": "/omdb-frontend/static/js/runtime-main.1d7ff260.js.map",
     "static/css/2.ae9f1eb3.chunk.css": "/omdb-frontend/static/css/2.ae9f1eb3.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.bd6ec985.chunk.js.map": "/omdb-frontend/static/js/3.bd6ec985.chunk.js.map",
     "index.html": "/omdb-frontend/index.html",
     "static/css/2.ae9f1eb3.chunk.css.map": "/omdb-frontend/static/css/2.ae9f1eb3.chunk.css.map",
-    "static/css/main.0bd2ff06.chunk.css.map": "/omdb-frontend/static/css/main.0bd2ff06.chunk.css.map",
+    "static/css/main.4d4ec4ef.chunk.css.map": "/omdb-frontend/static/css/main.4d4ec4ef.chunk.css.map",
     "static/js/2.ac3ff394.chunk.js.LICENSE.txt": "/omdb-frontend/static/js/2.ac3ff394.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1d7ff260.js",
     "static/css/2.ae9f1eb3.chunk.css",
     "static/js/2.ac3ff394.chunk.js",
-    "static/css/main.0bd2ff06.chunk.css",
-    "static/js/main.3612ea6c.chunk.js"
+    "static/css/main.4d4ec4ef.chunk.css",
+    "static/js/main.0300254c.chunk.js"
   ]
 }
