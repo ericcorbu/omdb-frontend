@@ -18,3 +18,11 @@
 .navbar {
   box-shadow: 0 10px 10px -10px rgba(33, 35, 38, 0.1);
 }
+.github {
+  margin: auto;
+  width: 85%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+}

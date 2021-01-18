@@ -12,7 +12,7 @@ const getSearchResults = async (searchTerm, page) => {
     page +
     "&type=" +
     DEFAULT_TYPE;
-  const response = await fetch(queryString);
+  const response = await fetch(queryString, { mode: "cors" });
   const data = await response.json();
   return data;
 };
@@ -20,7 +20,7 @@ const getSearchResults = async (searchTerm, page) => {
 const getMovieById = async (id) => {
   const queryString =
     apiConfig.url + "?apikey=" + apiConfig.key + "&i=" + id + "&plot=full";
-  const response = await fetch(queryString);
+  const response = await fetch(queryString, { mode: "cors" });
   const data = await response.json();
   return data;
 };

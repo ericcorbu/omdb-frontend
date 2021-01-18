@@ -135,7 +135,7 @@ class ListView extends Component {
     const inStorage = localStorage.getItem("nominations") || null;
 
     const nominations = inStorage ? JSON.parse(inStorage) : null;
-    const isFull = Object.keys(nominations).length === 5;
+    const isFull = nominations ? Object.keys(nominations).length === 5 : false;
     const listItems =
       this.state.listData.length > 0
         ? this.state.listData.map((movieData) => (
@@ -144,22 +144,22 @@ class ListView extends Component {
               key={movieData.imdbID}
               onSelected={this.onSelected}
               onNomination={this.addToNominatons}
-              isNominated={!!nominations[movieData.imdbID]}
+              isNominated={
+                nominations ? !!nominations[movieData.imdbID] : false
+              }
               isFull={isFull}
             />
           ))
         : null;
 
     // console.log(Object.entries(inStorage));
-    console.log(this.state.selectedItem);
-    console.log(Object.keys(inStorage).length);
     const introJumb =
       this.state.searchTerm?.current?.value == null ||
       this.state.searchTerm.current.value == "" ? (
         <Intro />
       ) : null;
     const nominationList =
-      Object.keys(nominations).length > 0 || this.state.showList ? (
+      Object.keys(nominations || {}).length > 0 || this.state.showList ? (
         <NominationsList
           nominations={nominations}
           onClear={this.onClear}
@@ -222,6 +222,9 @@ class ListView extends Component {
             {selectedMovie}
           </div>
         </div>
+        <a className="github" href="https://github.com/ericcorbu/omdb-frontend">
+          View on GitHub
+        </a>
         <Toast className="theToast" show={isFull}>
           <Toast.Header>Congrats!</Toast.Header>
           <Toast.Body>
