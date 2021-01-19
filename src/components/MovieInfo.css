@@ -29,11 +29,11 @@
   margin-top: 2px;
   font-size: 12px;
   display: block;
-  height: 30%;
   overflow-y: auto;
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   width: 100%;
+  max-height: 40%;
 }
 .genres {
   float: left;
