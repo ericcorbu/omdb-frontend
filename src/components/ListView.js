@@ -64,7 +64,6 @@ class ListView extends Component {
   }
 
   async handleLoadMore(page) {
-    console.log("HANDLE LOAD MORE");
     const results = await getSearchResults(
       this.state.searchTerm.current.value,
       page
@@ -101,13 +100,10 @@ class ListView extends Component {
     } else {
       const nominations = {};
       nominations[movie.imdbID] = movie;
-      console.log(nominations);
-      console.log(JSON.stringify(nominations));
+
       localStorage.setItem("nominations", JSON.stringify(nominations));
     }
-
-    const inStorage = localStorage.getItem("nominations");
-    console.log(inStorage);
+    this.forceUpdate();
     // inStorage.forEach((item) => console.log(item));
   }
 
@@ -126,7 +122,6 @@ class ListView extends Component {
 
   render() {
     // console.log(this.state.searchTerm)
-    console.log(this.state);
 
     const hitCounter = this.state.totalResults ? (
       <Badge>{this.state.totalResults} results</Badge>
@@ -169,7 +164,13 @@ class ListView extends Component {
       ) : null;
 
     const selectedMovie = this.state.selectedData ? (
-      <MovieInfo data={this.state.selectedData} />
+      <MovieInfo
+        data={this.state.selectedData}
+        onNomination={this.addToNominatons}
+        isNominated={
+          nominations ? !!nominations[this.state.selectedData.imdbID] : false
+        }
+      />
     ) : null;
     // console.log(this.state.page);
     // console.log(this.state.listData);
@@ -192,7 +193,6 @@ class ListView extends Component {
                   onChange={this.onSearchChange.bind(this)}
                   placeholder="Search"
                   className="searchBar"
-                  classname="searchBar"
                 />
               </InputGroup>
             </Form>

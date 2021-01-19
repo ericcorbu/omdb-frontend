@@ -6,7 +6,6 @@ import "./NominationsList.css";
 import { Award, X, Trash } from "react-bootstrap-icons";
 
 const NominationItem = (movie) => {
-  console.log(movie.movie);
   return (
     <ListGroup.Item
       onClick={() => movie.setSelected(movie.movie.imdbID)}
@@ -30,11 +29,9 @@ const NominationItem = (movie) => {
 };
 
 const NominationsList = (data) => {
-  console.log(data.nominations);
   const count = Object.keys(data.nominations).length;
 
   const items = Object.entries(data.nominations).map(([key, value]) => {
-    console.log(value);
     return (
       <NominationItem
         key={key}

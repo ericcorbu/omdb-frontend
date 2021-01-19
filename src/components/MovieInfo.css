@@ -2,8 +2,9 @@
   flex: 1;
   height: 40vh;
   margin-left: 20px;
-  background-color: #f3edfb;
+  background-color: white;
   color: black;
+  box-shadow: 0 10px 10px -10px rgba(33, 35, 38, 0.1);
 }
 .image {
   height: 100%;
@@ -17,18 +18,47 @@
   display: flex;
 }
 .title {
-  font-weight: bold;
-  font-style: oblique;
-  margin: 10px;
+  text-align: left;
 }
 .badge {
+  text-align: left;
   margin: 2px;
 }
 .plot {
+  margin-top: 2px;
   font-size: 12px;
   display: block;
-  height: calc(100% - 40%);
-  margin-left: 5px;
+  height: 30%;
   overflow-y: auto;
   text-align: left;
+  margin-bottom: 10px;
+}
+.genres {
+  float: left;
+}
+.content {
+  margin: 15px;
+  overflow-y: auto;
+}
+.oneLine {
+  display: flex;
+}
+.oneLineContent {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.otherDetails {
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.headerDiv {
+  display: flex;
+}
+.nominateButton {
+  margin-left: auto;
+  float: right;
+  padding: 0;
+  height: 48px;
+  width: 48px;
 }
