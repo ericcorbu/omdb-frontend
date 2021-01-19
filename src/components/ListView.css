@@ -24,6 +24,7 @@
 }
 .loader {
   flex: 1;
+  margin-top: auto;
 }
 .searchBar {
   flex: 1;

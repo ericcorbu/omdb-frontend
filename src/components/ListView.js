@@ -8,6 +8,7 @@ import MovieInfo from "./MovieInfo";
 import NominationsList from "./NominationsList";
 import Intro from "./Intro";
 import Toast from "react-bootstrap/Toast";
+import Spinner from "react-bootstrap/Spinner";
 import "./ListView.css";
 
 // TODO Top Genres
@@ -207,7 +208,8 @@ class ListView extends Component {
                 hasMore={this.state.listData.length < this.state.totalResults}
                 loader={
                   <div className="loader" key={0}>
-                    <h1>Scroll to load more ...</h1>
+                    <Spinner animation="border" />
+                    <h1> Loading ...</h1>
                   </div>
                 }
                 useWindow={false}

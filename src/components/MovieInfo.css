@@ -5,6 +5,7 @@
   background-color: white;
   color: black;
   box-shadow: 0 10px 10px -10px rgba(33, 35, 38, 0.1);
+  min-width: 580px;
 }
 .image {
   height: 100%;
@@ -32,6 +33,7 @@
   overflow-y: auto;
   text-align: left;
   margin-bottom: 10px;
+  width: 100%;
 }
 .genres {
   float: left;

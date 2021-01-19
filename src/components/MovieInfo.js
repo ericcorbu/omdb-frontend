@@ -62,7 +62,8 @@ const MovieInfo = (props) => {
             {rating}
             {runTime}
           </div>
-          {genreBadges}
+          <div>{genreBadges}</div>
+
           <br />
 
           <p className="plot">{data.Plot}</p>
