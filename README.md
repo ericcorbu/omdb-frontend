@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# OMDb Front End
+This project was built with React for the Shopify Summer 2021 UX & Web Developer Intern Challenge
+
+## Features
+
+- Saves user's nomination lists using localStorage.
+- Infinite scroll, fetches next 'page' of results when approaching bottom of list
+- Detailed movie data including actors, directors, awards and ratings
+
+For local use, follow instructions below.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
